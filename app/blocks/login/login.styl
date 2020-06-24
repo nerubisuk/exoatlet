@@ -1,0 +1,68 @@
+$cubic = cubic-bezier(.4, .01, .165, .99)
+
+.login
+	position absolute
+	z-index 9999
+	right 0
+	display block
+	visibility hidden
+	width 100%
+	max-width 600px
+	height 100%
+	background #e7e7e7
+	opacity 0
+	transition opacity .2s $cubic, visibility .2s $cubic
+
+	@media screen and (min-width: 600px)
+		right -100%
+		transition right .2s $cubic, opacity .2s $cubic, visibility .2s $cubic
+
+	&__close
+		position absolute
+		top 18px
+		right 3px
+		padding 10px
+		display inline-block
+		height auto
+		font-family 'Futura PT Heavy', sans-serif
+		font-size 10px
+		text-transform uppercase
+		text-align center
+		cursor pointer
+		color black
+		background transparent
+		border none
+		outline none
+		transition color .2s ease-out
+
+		&:hover
+			color rgba(0, 0, 0, .6)
+
+.welcome
+	background white
+
+	&__text
+		margin 0 auto
+		padding 49px 0 43px
+		width 70%
+		text-align center
+		color black
+
+		h1
+			margin-bottom 16px
+			font-family 'Futura PT Bold', sans-serif
+			font-size 30px
+
+		p
+			font-family 'Intro Book', sans-serif
+			font-size 12px
+			line-height 1.5
+
+.login.is-open
+	visibility visible
+	opacity 1
+	transition opacity 0s linear, visibility 0s linear
+
+	@media screen and (min-width: 600px)
+		right 0
+		transition right .2s $cubic, opacity .2s $cubic, visibility .2s $cubic

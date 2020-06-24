@@ -1,0 +1,98 @@
+.target
+	position relative
+	padding 56px 0
+	display table
+	overflow hidden
+	width 100%
+	color black
+	background #e7e7e7
+
+	.column
+		text-align right
+
+		@media screen and (min-width: 860px)
+			display table-cell
+			vertical-align bottom
+
+	.column
+		margin-bottom 80px
+
+	a
+		color black
+		transition color .2s ease-out
+
+		&:hover
+			color #00aeef
+
+	h3
+		position relative
+		margin-bottom 20px
+		font-family 'Futura PT Bold', sans-serif
+		font-size 50px
+		text-align left
+		word-spacing 860px
+
+		@media screen and (min-width: 860px)
+			margin-bottom 45px
+			font-size 120px
+			word-spacing normal
+
+	p
+		position relative
+		font-family 'Intro Book', sans-serif
+		line-height 1.5
+		text-align left
+
+		@media screen and (min-width: 860px)
+			max-width 670px
+			font-size 24px
+			letter-spacing .02ex
+
+	&__icon
+		position absolute
+		z-index 0
+		top -110px
+		left -100px
+		width 290px
+		height 290px
+
+		@media screen and (min-width: 860px)
+			top -230px
+			left -250px
+			width 580px
+			height 580px
+
+	&__more
+		position relative
+		padding-top 10px
+		padding-right 20px
+		font-family 'Futura PT Bold', sans-serif
+		text-transform uppercase
+		border-top 5px solid black
+
+		@media screen and (min-width: 860px)
+			padding-top 20px
+			border-top 10px solid black
+
+		&:before
+			position absolute
+			top -35px
+			left -125px
+			width 125px
+			height 10px
+			content ''
+			background black
+
+			@media screen and (min-width: 860px)
+				top -70px
+				left -250px
+				width 250px
+				height 20px
+
+		@media screen and (min-width: 860px)
+			margin-left 300px
+			font-size 24px
+
+	.steps
+		@media screen and (min-width: 860px)
+			margin-top 100px

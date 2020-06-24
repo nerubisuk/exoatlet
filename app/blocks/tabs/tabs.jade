@@ -1,0 +1,17 @@
+include ../login-form/login-form
+
+mixin tabs()
+	+b.tabs&attributes(attributes)
+	
+		+e('ul').nav
+			li(href='#individuals').active Для физ. лиц
+			li(href='#companies') Для юр. лиц
+			
+		+e.pane#individuals.active
+			+login-form()
+			
+		+e.pane#companies
+			+login-form('company')
+			
+	
+		block

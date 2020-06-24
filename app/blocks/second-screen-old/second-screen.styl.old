@@ -1,0 +1,131 @@
+.text-wrapper
+	position absolute
+	top 0
+	bottom 0
+	margin auto
+	padding-left 14px
+	height 0
+	min-height 200px
+
+.second-screen-content-header
+	position relative
+	z-index 2
+	font-family 'Futura PT Heavy', sans-serif
+	font-size 30px
+	color #00aeef
+
+.second-screen-content-text
+	position relative
+	z-index 2
+	padding-top 16px
+	padding-left 38px
+	font-family 'Intro Book', sans-serif
+	font-size 15px
+	line-height 1.35
+	color black
+
+
+.second-screen
+	position relative
+	padding-bottom 71px
+	display block
+	overflow hidden
+
+	.second-screen-description
+		position relative
+		padding 0 14px 168px 0
+		cursor pointer
+		background #e7e7e7
+
+	.second-screen-description.hovered
+		.second-screen-description-image
+			margin-left -30%
+
+		.second-screen-content-more
+			color #00aeef
+
+	.second-screen-content
+		position relative
+		display table
+		width 100%
+
+		.left-cell
+			width 65%
+			text-align right
+
+		.right-cell
+			width 35%
+
+		.second-screen-content__item
+			display table-cell
+			overflow hidden
+			vertical-align top
+
+			img
+				position relative
+				z-index 2
+				margin-left -95px
+				width 144%
+				border-bottom 2px solid #00aeef
+				transition margin-left .2s ease-out
+
+		.second-screen-content-more
+			position absolute
+			z-index 2
+			bottom -5px
+			width inherit
+			height 30px
+			font-family 'Futura PT Heavy', sans-serif
+			font-size 12px
+			text-transform uppercase
+			text-align right
+			letter-spacing .2ex
+			color #060606
+			border-bottom 9px solid #00aeef
+			transition color .2s ease-out
+
+		.second-screen-content-number
+			position absolute
+			z-index 1
+			top 41px
+			right -43px
+			font-family 'Futura PT Heavy', sans-serif
+			font-size 200px
+			color white
+
+	.second-screen-gallery
+		position relative
+		margin-top -130px
+		padding-left 13px
+
+		.second-screen-gallery-counter
+			font-family 'Futura PT Bold', sans-serif
+
+			.second-screen-gallery-counter__item
+				display inline-block
+				vertical-align middle
+
+			.arrow
+				margin-right 5px
+				font-size 18px
+				color #1eafec
+
+			.current
+				font-size 12px
+				color #1eafec
+
+			.divider
+				font-size 11px
+				color white
+
+			.all
+				font-size 11px
+				color white
+
+		.second-screen-gallery-slides
+			position relative
+			margin-top 10px
+			width 100%
+
+			img
+				width inherit

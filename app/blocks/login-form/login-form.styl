@@ -1,0 +1,89 @@
+.login-form
+	margin 0 auto
+	padding 45px 0
+	display block
+	width 70%
+	text-align center
+
+	&__field
+		position relative
+		margin-bottom 13px
+		text-align left
+
+		label
+			position absolute
+			top 0
+			margin-bottom 7px
+			display block
+			font-family 'Futura PT Heavy', sans-serif
+			font-size 10px
+			text-transform uppercase
+			letter-spacing .1ex
+			transition color .2s ease-out
+
+		input
+			margin-top 17px
+			padding 9px 10px
+			width 100%
+			font-family 'Intro Book', sans-serif
+			font-size 16px
+			border 1px solid black
+			transition border-color .2s ease-out
+
+			&:focus
+				border-color #00aeef
+
+				+ label
+					color #00aeef
+
+	button
+		margin-top 20px
+		margin-bottom 20px
+		padding 10px
+		display block
+		width 100%
+		height auto
+		font-family 'Futura PT Bold', sans-serif
+		font-size 16px
+		text-transform uppercase
+		text-align center
+		cursor pointer
+		color #fff
+		background #00aeef
+		border none
+		outline none
+		transition background .14s ease-out
+
+		&:hover
+			background-color #0498d0
+
+	a
+		font-family 'Futura PT Bold', sans-serif
+		font-size 16px
+		color black
+		text-transform uppercase
+		border-bottom 2px solid transparent
+		transition border-color .14s ease-out
+
+		&:hover
+			border-color black
+
+	&::-webkit-input-placeholder
+		font-family 'Intro Book', sans-serif
+		font-size 16px
+		color #cccccc
+
+	&::-moz-placeholder
+		font-family 'Intro Book', sans-serif
+		font-size 16px
+		color #cccccc
+
+	&:-moz-placeholder
+		font-family 'Intro Book', sans-serif
+		font-size 16px
+		color #cccccc
+
+	&:-ms-input-placeholder
+		font-family 'Intro Book', sans-serif
+		font-size 16px
+		color #cccccc

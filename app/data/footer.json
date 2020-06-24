@@ -1,0 +1,47 @@
+[
+    {
+    	"color": "dark",
+        "href": "#",
+    	"content": "Условия использования"
+    },
+    {
+    	"color": "dark",
+        "href": "#",
+    	"content": "Клиники-партнеры"
+    },
+    {
+    	"color": "dark",
+        "href": "#",
+    	"content": "Контакты"
+    },
+    {
+    	"color": "dark",
+        "href": "#",
+    	"content": "Форма обратной связи"
+    },
+    {
+    	"color": "dark",
+        "href": "#",
+    	"content": "Для прессы"
+    },
+    {
+    	"color": "dark",
+        "href": "#",
+    	"content": "Пресскит"
+    },
+    {
+    	"color": "light",
+        "href": "#",
+    	"content": "Стать пилотом"
+    },
+    {
+    	"color": "light",
+        "href": "#",
+    	"content": "Протестировать"
+    },
+    {
+    	"color": "dark",
+        "href": "#login",
+    	"content": "Вход"
+    }
+]

@@ -1,0 +1,38 @@
+include ../steps/steps
+
+mixin second-screen()
+	+b.second-screen&attributes(attributes)
+	
+		.background
+			.container
+				h3 ExoAtlet 1 для клиник
+				p Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают
+				
+				+e('a').more(href=jv0) Подробнее
+				
+				+e.number
+					img(src="assets/images/02/02.png")
+					
+					
+		+b.slides
+			.container
+				+b.slides-control 
+					+e.current 04 
+					+e.all | 10
+					+e.arrow.disable &larr;
+					+e.arrow.active &rarr;
+				
+			+b.slides-images
+				+e.image
+					img(src="assets/images/02/slides/01.jpg")
+				+e.image
+					img(src="assets/images/02/slides/02.jpg")
+				+e.image
+					img(src="assets/images/02/slides/03.jpg")
+				+e.image
+					img(src="assets/images/02/slides/04.jpg")
+					
+		.container
+			+steps('dark', {active: '00'}, {active: '01'}, {active: '02'}, '03', '04', '05', '06')
+			
+		block

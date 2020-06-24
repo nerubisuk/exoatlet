@@ -1,0 +1,47 @@
+import('sprites/*')
+import('helpers/svg-size')
+@import 'helpers/variables'
+@import 'helpers/mixins'
+@import 'helpers/fonts'
+@import 'helpers/optimize'
+
+import('../blocks/**/*')
+
+html, body
+    // height 100%
+    // max-width 420px
+    min-width 320px
+    width 100%
+    position relative
+
+body
+	overflow-x hidden
+
+svg
+    width inherit
+    height inherit
+
+body.overflowed
+    overflow hidden
+
+.source
+    background url('/assets/images/source.jpg') no-repeat
+    width 320px
+    height 931px
+    position absolute
+    top 0
+    left 0
+    z-index 10000
+    opacity .3
+
+.container
+    padding 0 16px
+    position relative
+
+    @media screen and (min-width: 860px)
+        margin 0 auto
+        max-width 1170px
+
+a
+    text-decoration none
+    transition color .2s ease-out

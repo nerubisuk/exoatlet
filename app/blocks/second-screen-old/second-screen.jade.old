@@ -1,0 +1,34 @@
+mixin second-screen()
+	+b.second-screen#second-screen&attributes(attributes)
+		
+		.second-screen-description
+		
+			.second-screen-content
+				.second-screen-content__item.left-cell
+					img.second-screen-description-image(src="assets/images/second-screen-image.jpg")
+					
+				.second-screen-content__item.right-cell
+					.second-screen-content-number 01	
+					.second-screen-content-more Подробнее
+			
+			.text-wrapper
+				.second-screen-content-header ExoAtlet 1 для дома
+				.second-screen-content-text Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает
+					
+		
+		
+		.second-screen-gallery
+			.second-screen-gallery-counter
+				.second-screen-gallery-counter__item.arrow &rarr;
+				.second-screen-gallery-counter__item.current 03
+				.second-screen-gallery-counter__item.divider |
+				.second-screen-gallery-counter__item.all 08
+				
+			.second-screen-gallery-slides
+				img(src="assets/images/second-screen-slides.png")
+				
+				
+		+steps('dark', {active: '00'}, {active: '01'}, '02', '03', '04', '05', '06')
+		
+			
+		block

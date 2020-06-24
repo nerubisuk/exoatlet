@@ -1,0 +1,39 @@
+include ../first-screen/first-screen
+
+mixin fourth-screen()
+	+b.fourth-screen&attributes(attributes)
+		.container
+			h3 Немного цифр
+			
+			.bubbles-wrap
+				.row
+					.column.width-90
+						+b.bubble
+							+e.header 456789
+							+e.sub-header Шагов сделали
+						img(src="assets/images/04/bubbles/bubble-1.jpg")
+							
+					.column
+						p Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. 
+				
+				.row
+					.column
+							
+					.column.width-70
+						+b.bubble
+							+e.header 1356
+							+e.sub-header Пилотов
+						img(src="assets/images/04/bubbles/bubble-2.jpg")
+						
+				.row
+					.column.width-65
+						+b.bubble
+							+e.header 4578.5
+							+e.sub-header км. прошли
+						img(src="assets/images/04/bubbles/bubble-3.jpg")
+							
+					.column
+				
+			+steps('dark', {active: '00'}, {active: '01'}, {active: '02'}, {active: '03'}, {active: '04'}, '05', '06')
+			
+		block

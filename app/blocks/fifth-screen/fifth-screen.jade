@@ -1,0 +1,35 @@
+include ../steps/steps
+
+mixin fifth-screen()
+	+b.fifth-screen&attributes(attributes)
+		.container
+			+b.event
+				+b.event-date
+					+e.day 14 августа
+					+e.year 2016
+				
+				+e.image
+					img(src="assets/images/events-image.jpg")
+				
+				+e.text ЭкзоАтлет представляет экзоскелет президенту РФ Владимиру Путину на Форуме Агенства Стратегических Инициатив
+				
+					+b('a').event-more(href=jv0) 
+						+e('span').border
+						+e('span').text Подробнее
+					
+			+e.number
+				img(src="assets/images/05.png")
+			
+			
+			.column
+				h3 Хочешь принять участие?
+				p Объявлен набор новой группы пилотов для проведения серии клинических  исследований ExoAtlet® I в НМХЦ им. Н.И. Пирогова. Так же мы проводим наборы в других городах. Следите за новостями.
+				
+				+e('a').more(href=jv0) Найти свой город
+				
+			.column
+				img(src=src="assets/images/05/screen-bg.jpg")
+				
+			+steps('light', {active: '00'}, {active: '01'}, {active: '02'}, {active: '03'}, {active: '04'}, {active: '05'}, '06')
+	
+		block

@@ -1,0 +1,25 @@
+include ../steps/steps
+
+mixin first-screen()
+	+b.first-screen&attributes(attributes)
+	
+		.screen
+	
+			.container
+			
+				.row
+					.column.left
+						img(src="assets/images/01/screen-bg.jpg")
+						
+					.column.right
+						+e.number
+							img(src="assets/images/01/01.png")
+							
+						h3 ExoAtlet 1 для дома
+						p Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает
+						
+						+b('a').more(href=jv0)
+							+e('span').line
+							+e('span').text Подробнее
+						
+		block

@@ -1,0 +1,33 @@
+include ../mobile-menu/mobile-menu
+include ../icon/icon
+include ../news-block/news-block
+include ../steps/steps
+
+mixin zero-screen()
+	+b.zero-screen&attributes(attributes)
+	
+		.container
+			+b.logo EXOATLET
+			+mobile-menu(getData('mobile-menu'))
+			
+			.video-oval
+				.oval-icon
+					+icon('oval_icon')
+					
+			.play-icon
+				+icon('play_icon')
+				
+			.first-screen__description
+				.first-line.white Что мы делаем? 
+				.second-line.blue Медицинский экзоcкелет для реабилитации.
+				.third-line.white Мы даем
+					span.fourth-line.blue возможность встать в полный рост
+					|  и это только начало!
+				//- .fifth-line.white и это только начало!
+				
+			+news-block(getData('news-block'))
+			
+			+steps('light', {active: '00'}, '01', '02', '03', '04', '05', '06')
+	
+		
+		block
