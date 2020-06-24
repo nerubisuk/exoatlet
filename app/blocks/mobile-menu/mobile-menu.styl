@@ -1,0 +1,98 @@
+$cubic = cubic-bezier(.4, .01, .165, .99)
+
+.mobile-menu
+	position fixed
+	z-index 10000
+	top 0
+	left 0
+	display block
+	overflow hidden
+	width 100%
+	height 0
+	background #00aeef
+	opacity .8
+	transition height .3s $cubic, opacity 2.5s $cubic
+	transition-delay 0s
+
+	@media screen and (min-width: 860px)
+		position relative
+		z-index 1
+		padding-left 50px
+		display table-cell
+		width 100%
+		height auto
+		vertical-align middle
+		background none
+		opacity 1
+
+	.mobile-menu-links
+		padding 66px 0
+
+		@media screen and (min-width: 860px)
+			padding 0
+
+	.mobile-nav
+		font-family 'Futura PT Bold', sans-serif
+		font-size 15px
+		text-transform uppercase
+
+		@media screen and (min-width: 860px)
+			display inline-block
+			font-size 14px
+
+		.mobile-nav__item
+			padding-left 59px
+			display block
+			line-height 3.35
+			letter-spacing .2ex
+			opacity .2
+			transform scale(1.3) translateY(-30px)
+			transition transform .5s $cubic, opacity .5s $cubic, color .2s ease-out
+
+			for $i in (1..7)
+				&:nth-child({$i})
+					transition-delay $i * .04s
+
+			@media screen and (min-width: 860px)
+				padding-right 30px
+				padding-left 0
+				display inline-block
+				line-height 1.5
+				transform scale(1) translateY(0)
+				opacity 1
+
+
+
+	.mobile-nav.light
+		.mobile-nav__item
+			color white
+
+			&:hover
+				color rgba(255, 255, 255, .8)
+
+	.mobile-nav.dark
+		margin-top 88px
+
+		@media screen and (min-width: 860px)
+			margin-top 0
+			float right
+
+		.mobile-nav__item
+			color black
+
+			@media screen and (min-width: 860px)
+				color white
+
+			&:hover
+				color rgba(0, 0, 0, .6)
+
+.mobile-menu.is-open
+	top 0
+	height 100%
+	opacity 1
+	transition opacity .5s $cubic, height .5s $cubic
+	transition-delay .2s
+
+	.mobile-nav__item
+		transform scale(1) translateY(0)
+		opacity 1

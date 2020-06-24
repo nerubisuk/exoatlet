@@ -1,0 +1,12 @@
+mixin mobile-menu(items)
+	+b.mobile-menu&attributes(attributes)
+	
+		.mobile-menu-links
+		
+			each item in items
+				+b.mobile-nav(class="#{item.color}")
+					
+					each content in item.content
+						+e('a')(href="#{content.href}").item= content.content
+			
+		block

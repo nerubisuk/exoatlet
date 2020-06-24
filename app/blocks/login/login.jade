@@ -1,0 +1,17 @@
+include ../tabs/tabs
+
+mixin login()
+	+b.login&attributes(attributes)
+	
+		+e('button').close Закрыть
+		
+		+b.welcome
+		
+			+e.text
+				h1 Привет!
+				p Здесь любой текст про то, что Вам нужно выбрать подходящий аккаунт, чтобы войти или зарегистрироваться
+			
+		+tabs
+	
+	
+		block

@@ -1,0 +1,35 @@
+include ../icon/icon
+
+mixin footer()
+	+b.footer&attributes(attributes)
+	
+		.container
+	
+			+b.footer-links
+				.column
+					+e('a').item(href=href=jv0 class="dark") Условия использования
+					+e('a').item(href=href=jv0 class="dark") Клиники-партнеры
+					+e('a').item(href=href=jv0 class="dark") В разработке
+					
+				.column
+					+e('a').item(href=href=jv0 class="dark") Контакты
+					+e('a').item(href=href=jv0 class="dark") Форма обратной связи
+					+e('a').item(href=href=jv0 class="dark") Вакансии
+				
+				.column
+					+e('a').item(href=href=jv0 class="dark") Для прессы
+					+e('a').item(href=href=jv0 class="dark") Пресскит
+				
+				.column
+					+e('a').item(href=href=jv0 class="light") Стать пилотом
+					+e('a').item(href=href=jv0 class="light") Протестировать
+				
+				.column
+					+e('a').item(href="#login" class="dark") Вход
+			
+			+b.footer-social
+				+e('a')(href=jv0).item: +icon('facebook_icon')
+				+e('a')(href=jv0).item: +icon('vkontakte_icon')
+				+e('a')(href=jv0).item: +icon('odnoklassniki_icon')
+	
+		block

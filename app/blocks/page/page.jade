@@ -1,0 +1,27 @@
+include ../hamburger-icon/hamburger-icon
+include ../login/login
+
+include ../zero-screen/zero-screen
+include ../first-screen/first-screen
+include ../second-screen/second-screen
+include ../third-screen/third-screen
+include ../fourth-screen/fourth-screen
+include ../fifth-screen/fifth-screen
+
+include ../target/target
+include ../footer/footer
+
+mixin page()
+	+b('body').page&attributes(attributes)
+		+hamburger-icon
+		+login
+		+zero-screen
+		+first-screen
+		+second-screen
+		+third-screen
+		+fourth-screen
+		+fifth-screen
+		+target
+		+footer
+
+		block

@@ -1,0 +1,12 @@
+mixin steps(color, ...steps)
+	+b.steps&attributes(attributes)
+		+e.name Шаги
+		
+		each step in steps
+			if step.active
+				+e('a').item.active(href=jv0)= step.active
+				
+			else 
+				+e('a').item(href=jv0 class!="#{color}")= step
+				
+		block

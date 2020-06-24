@@ -1,0 +1,23 @@
+include ../steps/steps
+
+mixin third-screen()
+	+b.third-screen&attributes(attributes)
+	
+		.container
+
+			.row
+				.column
+					h3 Ищем пилотов
+					p Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает.
+					
+					+e('a').cities(href=jv0) Посмотреть другие города
+				
+				.column 
+					+e.number
+						img(src="assets/images/03/03.png")
+						
+					+e('a').become-pilot(href=jv0) Хочу стать пилотом &#8594;
+					
+			+steps('dark', {active: '00'}, {active: '01'}, {active: '02'}, {active: '03'}, '04', '05', '06')
+					
+		block

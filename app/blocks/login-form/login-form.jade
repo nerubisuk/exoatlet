@@ -1,0 +1,27 @@
+mixin login-form(type)
+	+b('form').login-form&attributes(attributes)
+		
+		+e.field 		
+			if type
+				input(type="text" placeholder="Газпром") 
+				
+			else		
+				input(type="text" placeholder="username@gmail.com") 
+				
+			label
+				if type 
+					| Организация
+					
+				else 
+					| Имя пользователя
+			
+		+e.field
+			input(type="password" placeholder="••••••") 
+			label Пароль	
+			
+		button(type="submit") Войти
+		
+		if type
+			a(href="#") Регистрация
+	
+		block

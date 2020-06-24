@@ -1,0 +1,32 @@
+include ../icon/icon
+include ../hamburger-icon/hamburger-icon
+include ../news-block/news-block
+include ../steps/steps
+
+mixin first-screen()
+	+b.first-screen#first-screen&attributes(attributes)
+		
+		+hamburger-icon
+			
+		.exoatlet-logo EXOATLET
+			//- +icon('exoatlet_logo')
+			
+		.video-oval
+			.oval-icon
+				+icon('oval_icon')
+				
+		.play-icon
+			+icon('play_icon')
+		
+		.first-screen__description
+			.first-line.white Что мы делаем? 
+			.second-line.blue Медицинский экзоcкелет для реабилитации.
+			.third-line.white Мы даем
+				span.fourth-line.blue возможность встать в полный рост
+			.fifth-line.white и это только начало!
+			
+		+news-block(getData('news-block'))
+		
+		+steps('light', {active: '00'}, '01', '02', '03', '04', '05', '06')
+		
+		block

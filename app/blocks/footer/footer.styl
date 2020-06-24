@@ -1,0 +1,62 @@
+.footer
+	padding 26px 0
+	display block
+	font-family 'Futura PT Heavy', sans-serif
+	font-size 12px
+	text-transform uppercase
+	background white
+
+	.footer-links
+		display table
+		width 100%
+		max-width 960px
+		line-height 3
+		letter-spacing 1.1px
+
+		&__item
+			display block
+
+		.column
+			display block
+
+			@media screen and (min-width: 860px)
+				display table-cell
+				max-width 145px
+				vertical-align top
+
+	.dark
+		color #060606
+
+		&:hover
+			color #636363
+
+	.light
+		color #00aeef
+
+		&:hover
+			color #09769e
+
+	.footer-social
+		position relative
+		margin-top 13px
+		margin-left -8px
+
+		&__item
+			margin-right 15px
+			display inline-block
+			width 20px
+			height 18px
+			text-align center
+			transition transform .2s ease-out
+
+			&:hover
+				transform scale(1.1)
+
+		@media screen and (min-width: 1100px)
+			position absolute
+			top 0
+			right 0
+			bottom 0
+			margin auto
+			display inline-block
+			height 20px

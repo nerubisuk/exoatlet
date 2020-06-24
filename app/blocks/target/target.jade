@@ -1,0 +1,22 @@
+include ../icon/icon
+include ../steps/steps
+
+mixin target()
+	+b.target&attributes(attributes)
+		
+		.container
+			+e.icon
+				+icon('target_icon')
+			
+				
+			h3 Наша цель
+				
+			.column.left
+				p Создать условия, при которых максимальное количество пациентов с локомоторными нарушениями смогут в стационаре или амбулаторно сделать первые шаги к восстановлению и улучшению качества жизни. Мы готовы к сотрудничеству с дистрибьюторами на территории РФ и всего мира.
+			
+			.column
+				+e('a').more(href=jv0) Подробнее
+				
+			+steps('light', {active: '00'}, {active: '01'}, {active: '02'}, {active: '03'}, {active: '04'}, {active: '05'}, {active: '06'})
+		
+		block

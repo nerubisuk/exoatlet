@@ -1,0 +1,41 @@
+[
+    {
+        "color": "light",
+        "content":[
+            {
+                "href": "#",
+                "content": "О проекте"
+            },
+
+            {
+                "href": "#",
+                "content": "Новости"
+            },
+            {
+                "href": "#",
+                "content": "Для дома"
+            },
+            {
+                "href": "#",
+                "content": "Для клиник"
+            },
+            {
+                "href": "#",
+                "content": "Команда"
+            }
+        ]
+    },
+    {
+        "color": "dark",
+        "content":[
+            {
+                "href": "#login",
+                "content": "Вход"
+            },
+            {
+                "href": "#",
+                "content": "ENG"
+            }
+        ]
+    }
+]
